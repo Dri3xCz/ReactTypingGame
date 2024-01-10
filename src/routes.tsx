@@ -1,4 +1,6 @@
-export const routes = {
+export const routes: Record<string, Route> = {
   home: "/",
-  account: "/account"
-} 
+  account: "/account",
+};
+
+export type Route = "/" | "/account" | "/settings";
