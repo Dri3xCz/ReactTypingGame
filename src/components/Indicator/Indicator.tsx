@@ -9,7 +9,7 @@ export interface IndicatorProps {
 export function Indicator({ path, Icon }: IndicatorProps) {
   return (
     <a href={path}>
-      <Icon className="fill-white ms-4 w-8 h-8" />
+      <Icon className="fill-white ms-4 w-7 h-7" />
     </a>
   );
 }
