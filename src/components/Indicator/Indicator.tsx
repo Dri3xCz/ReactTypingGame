@@ -1,5 +1,5 @@
 import { FunctionComponent, SVGProps } from "react";
-import { Route } from "../../routes";
+import { Route } from "@/routes"
 
 export interface IndicatorProps {
   path: Route;
