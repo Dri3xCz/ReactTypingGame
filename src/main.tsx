@@ -3,7 +3,7 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Main from "./pages/Main";
+import Main from "./components/pages/Main";
 import Layout from "./components/Layout/Layout";
 import { routes } from "./routes";
 
