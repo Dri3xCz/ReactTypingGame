@@ -9,3 +9,5 @@ export function useTheme() {
 
   return themeContext;
 }
+
+export default useTheme;

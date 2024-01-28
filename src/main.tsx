@@ -6,6 +6,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Main from "./components/pages/Main";
 import Layout from "./components/Layout/Layout";
 import { routes } from "./routes";
+import { ThemeProvider } from "./providers/ThemeProvider/ThemeProvider";
+import { Root } from "./components/Root";
 
 const router = createBrowserRouter([
   {
@@ -16,10 +18,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div className="container mx-auto">
-      <Layout>
-        <RouterProvider router={router} />
-      </Layout>
-    </div>
+    <ThemeProvider>
+      <Root>
+        <Layout>
+          <RouterProvider router={router} />
+        </Layout>
+      </Root>
+    </ThemeProvider>
   </React.StrictMode>
 );
