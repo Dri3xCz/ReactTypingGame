@@ -1,6 +1,7 @@
+import { TypingField } from "../TypingField/TypingField";
 
 export function Main() {
-  return <div>Hello world</div>
+  return <TypingField />
 }
 
 export default Main;
