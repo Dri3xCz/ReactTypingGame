@@ -7,7 +7,6 @@ import Main from "./components/pages/Main";
 import Layout from "./components/Layout/Layout";
 import { routes } from "./routes";
 import { ThemeProvider } from "./providers/ThemeProvider/ThemeProvider";
-import { Root } from "./components/Root";
 
 const router = createBrowserRouter([
   {
@@ -19,11 +18,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider>
-      <Root>
-        <Layout>
-          <RouterProvider router={router} />
-        </Layout>
-      </Root>
+      <Layout>
+        <RouterProvider router={router} />
+      </Layout>
     </ThemeProvider>
   </React.StrictMode>
 );
